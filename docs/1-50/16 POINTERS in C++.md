@@ -74,7 +74,7 @@ int* ptr = var;
 ![](./storage%20bag/Pasted%20image%2020230701175816.png)
 
 由于我们使用了*new*这个关键字，所以该数据分配在*heap*(堆)上，因此处理完还需要删除这个数据：
-
+	char* buffer表示 new char 这个8byte 内存块的开头指针
 ```cpp
 	char* buffer = new char[8];
 	memset(buffer, 0, 8); //用于设置一段内存的值。在这里将缓冲区的所有字节都设置为0，实现了清零的效果。
